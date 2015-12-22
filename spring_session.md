@@ -8,4 +8,3 @@
     
     2）在jsp中获取，可以使用jstl的${sessionCope.变量名}获取。 
 
-2. 
