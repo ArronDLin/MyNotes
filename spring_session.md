@@ -8,3 +8,5 @@
     
     2）在jsp中获取，可以使用jstl的${sessionCope.变量名}获取。 
 
+    
+2.  接管Session,利用SessionListener实现HttpSessionListener,然后在Initializer中通过servletContext.addListener(new SessionListener())注册。详情参考[Spring Java 配置之 Session 超时 ](http://www.oschina.net/translate/spring-java-configuration-session-timeout)
