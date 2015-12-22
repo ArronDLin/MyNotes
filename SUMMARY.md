@@ -1,5 +1,5 @@
 # Summary
 
-* [Introduction](01_Spring_Session.md)
+* [Introduction](README.md)
 * [Spring Session](spring_session.md)
 
