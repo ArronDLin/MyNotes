@@ -14,7 +14,13 @@
 
     利用SessionListener实现HttpSessionListener,然后在Initializer中通过servletContext.addListener(new SessionListener())注册。详情参考[Spring Java 配置之 Session 超时 ](http://www.oschina.net/translate/spring-java-configuration-session-timeout)
     
-    
 3. Spring security 2.0 session过期时自动转向登陆页面
+    
+    1）自定义一个sessionTimeoutFilter， 将其加到web.xml的filter list中
+    
+    2）在sessionTimeoutFilter的doFilter中判断请求是否超时，返回相应登陆页面
+
+    3）在客户端，利用jquery的ajaxComplete()绑定事件获取ajax事件返回的response表头，来决定是否跳转。
+
 
     
