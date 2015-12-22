@@ -15,3 +15,5 @@
     利用SessionListener实现HttpSessionListener,然后在Initializer中通过servletContext.addListener(new SessionListener())注册。详情参考[Spring Java 配置之 Session 超时 ](http://www.oschina.net/translate/spring-java-configuration-session-timeout)
     
     
+3. Spring security 2.0 session过期时自动转向登陆页面
+
