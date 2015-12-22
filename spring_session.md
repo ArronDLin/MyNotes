@@ -7,3 +7,5 @@
     1）在Controller中获取，在需要用到这个变量的Controller上加上@SessionAttributes(""),然后再用到的函数中加上参数@ModelAttributes("")。
     
     2）在jsp中获取，可以使用jstl的${sessionCope.变量名}获取。 
+
+2. 
