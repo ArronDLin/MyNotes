@@ -21,6 +21,8 @@
     2）在sessionTimeoutFilter的doFilter中判断请求是否超时，返回相应登陆页面
 
     3）在客户端，利用jquery的ajaxComplete()绑定事件获取ajax事件返回的response表头，来决定是否跳转。
+    
+    详情[SpringSecurity2 session超时跳转登陆界面](http://www.2cto.com/kf/201401/271223.html)
 
 
     
