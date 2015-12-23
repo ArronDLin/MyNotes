@@ -48,4 +48,16 @@ public ModelAndView show1(HttpServletRequest request,
     }  
     ```
     
+    上面的结果会将文本"Hello World "直接写到http响应流。
+    
+    ```
+    @RequestMapping("/welcome") 
+    public String welcomeHandler() { 
+      return "center"; 
+    }  
+    ```
+    对应的逻辑视图名为“center”，URL= prefix前缀+视图名称 +suffix后缀组成。
+    
+    * void  如果返回值为空，则响应的视图页面对应为访问地址
+    
     
