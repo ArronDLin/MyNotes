@@ -66,5 +66,20 @@ public ModelAndView show1(HttpServletRequest request,
     ```
     此例对应的逻辑视图名为"welcome"。
     
-    
+小结：
+1.  使用 String                         作为请求处理方法的返回值类型是比较通用的方法，这    样返回的逻辑视图名不会和请求 URL 绑定，具有很大的灵活性，而模型数据又可以通过 ModelMap 控制。    
+
+```
+	@RequestMapping(value = "/actionresource/createaction", method = RequestMethod.GET)
+	public String createAction(@RequestParam(required = false, value = "parentId") Long parentId,
+			@RequestParam(required = false, value = "parentName") String parentName, 
+			@RequestParam(required = false, value = "mid") Long mid, Model model) {
+		model.addAttribute("parentId", parentId);
+		model.addAttribute("mid", mid);
+		return super.getRelativePath("/actionresource/createaction");
+	}
+```
+
+
+
     
