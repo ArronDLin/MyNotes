@@ -80,6 +80,11 @@ public ModelAndView show1(HttpServletRequest request,
 	}
 ```
 
+2. 使用void,map,Model 时，返回对应的逻辑视图名称真实url为：prefix前缀+视图名称 +suffix后缀组成。
+
+3. 使用String,ModelAndView返回视图名称可以不受请求的url绑定，ModelAndView可以设置返回的视图名称。
+
+
 
 
 
