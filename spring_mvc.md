@@ -84,7 +84,17 @@ public ModelAndView show1(HttpServletRequest request,
 
 3. 使用String,ModelAndView返回视图名称可以不受请求的url绑定，ModelAndView可以设置返回的视图名称。
 
+*Model model,HttpServletRequest request, ModelMap map声明变量*
 
+*request.getSession().setAttribute("test", "haiwei2Session");*
+
+*request.setAttribute("test", "haiwei1request");*
+
+*map.addAttribute("test", "haiweiModelMap");*
+
+*model.addAttribute("test", "haiweiModel");**
+
+*通过${test}这个方式取值，优先取Model和ModelMap的，Model和ModelMap是同一个东西，谁最后赋值的就取谁的，然后是request，最后是从session中获取*
 
 
 
