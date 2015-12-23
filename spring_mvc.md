@@ -39,4 +39,13 @@ public ModelAndView show1(HttpServletRequest request,
     
     *注意：如果方法声明了注解@ResponseBody ，则会直接将返回值输出到页面。*
     
+    ```
+    
+    @RequestMapping(value = "/something", method = RequestMethod.GET) 
+    @ResponseBody 
+    public String helloWorld()  { 
+    return "Hello World"; 
+    }  
+    ```
+    
     
