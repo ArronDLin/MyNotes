@@ -60,4 +60,11 @@ public ModelAndView show1(HttpServletRequest request,
     
     * void  如果返回值为空，则响应的视图页面对应为访问地址
     
+    ```
+    @RequestMapping("/welcome") 
+    public void welcomeHandler() {}  
+    ```
+    此例对应的逻辑视图名为"welcome"。
+    
+    
     
