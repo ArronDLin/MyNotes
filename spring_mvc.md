@@ -17,7 +17,7 @@ public ModelAndView show1(HttpServletRequest request,
     
     ```
     
-    * Model 是一个借口，其实现类为ExtendedModelMap，继承了ModelMap类。
+    * Model 是一个接口，其实现类为ExtendedModelMap，继承了ModelMap类。
     
     * Map 
     
