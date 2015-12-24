@@ -5,5 +5,5 @@
 * [Spring Security](spring_security.md)
 * [Spring MVC](spring_mvc.md)
 * [Hibernate](hibernate.md)
-* Java泛型
+* [Java泛型](java_generic.md)
 
