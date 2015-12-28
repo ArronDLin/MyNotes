@@ -12,4 +12,12 @@
     
     除了extends还可以用supper。例如如果是pk super ArrayList表示pk必须是Arraylist或其某父类。
     
+## Dec 28th, 2015
+
+1. joda-time的使用
+
+    无疑，joda-time使时间的生成运算等更方便。
     
+    ```java
+    
+    ```
